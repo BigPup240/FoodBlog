@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Your Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="blog-posts">
+            <article class="post">
+                <h2>Post Title 1</h2>
+                <p class="date">Posted on August 10, 2024</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel lacus a eros facilisis commodo.</p>
+                <button class="read-more" onclick="showPost(this)">Read More</button>
+                <div class="full-post" style="display:none;">
+                    <p>Full content of the post goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel lacus a eros facilisis commodo.</p>
+                </div>
+            </article>
+            <article class="post">
+                <h2>Post Title 2</h2>
+                <p class="date">Posted on August 8, 2024</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel lacus a eros facilisis commodo.</p>
+                <button class="read-more" onclick="showPost(this)">Read More</button>
+                <div class="full-post" style="display:none;">
+                    <p>Full content of the post goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel lacus a eros facilisis commodo.</p>
+                </div>
+            </article>
+            <article class="post">
+                <h2>Post Title 3</h2>
+                <p class="date">Posted on August 6, 2024</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel lacus a eros facilisis commodo.</p>
+                <button class="read-more" onclick="showPost(this)">Read More</button>
+                <div class="full-post" style="display:none;">
+                    <p>Full content of the post goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel lacus a eros facilisis commodo.</p>
+                </div>
+            </article>
+            <article class="post">
+                <h2>Post Title 4</h2>
+                <p class="date">Posted on August 4, 2024</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel lacus a eros facilisis commodo.</p>
+                <button class="read-more" onclick="showPost(this)">Read More</button>
+                <div class="full-post" style="display:none;">
+                    <p>Full content of the post goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel lacus a eros facilisis commodo.</p>
+                </div>
+            </article>
+            <article class="post">
+                <h2>Post Title 5</h2>
+                <p class="date">Posted on August 2, 2024</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel lacus a eros facilisis commodo.</p>
+                <button class="read-more" onclick="showPost(this)">Read More</button>
+                <div class="full-post" style="display:none;">
+                    <p>Full content of the post goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel lacus a eros facilisis commodo.</p>
+                </div>
+            </article>
+            <article class="post">
+                <h2>Post Title 6</h2>
+                <p class="date">Posted on July 31, 2024</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel lacus a eros facilisis commodo.</p>
+                <button class="read-more" onclick="showPost(this)">Read More</button>
+                <div class="full-post" style="display:none;">
+                    <p>Full content of the post goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel lacus a eros facilisis commodo.</p>
+                </div>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach out to me at: <a href="mailto:you@example.com">you@example.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Blog. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

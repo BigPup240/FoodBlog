@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Your Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="blogs-page">
+    <header>
+        <div class="parallax-banner">
+            <h1>Your Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="separator">|</li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="blog-posts">
+            <!-- Column 1 -->
+            <div class="post-column">
+                <div class="post">
+                    <h2>Post Title</h2>
+                    <p class="date">July 25, 2024</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <div class="full-post">
+                        <p>This is the full content of the post, with more details and information...</p>
+                    </div>
+                    <button class="toggle-post" onclick="togglePost(this)">Read More &#x25BC;</button>
+                    <button class="see-less" style="display: none;" onclick="togglePost(this)">See Less &#9650;</button>
+                </div>
+                <!-- Repeat for other posts in this column -->
+            </div>
+
+            <!-- Column 2 -->
+            <div class="post-column">
+                <div class="post">
+                    <h2>Post Title</h2>
+                    <p class="date">July 25, 2024</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <div class="full-post">
+                        <p>This is the full content of the post, with more details and information...</p>
+                    </div>
+                    <button class="toggle-post" onclick="togglePost(this)">Read More &#x25BC;</button>
+                    <button class="see-less" style="display: none;" onclick="togglePost(this)">See Less &#9650;</button>
+                </div>
+                <!-- Repeat for other posts in this column -->
+            </div>
+
+            <!-- Column 3 -->
+            <div class="post-column">
+                <div class="post">
+                    <h2>Post Title</h2>
+                    <p class="date">July 25, 2024</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <div class="full-post">
+                        <p>This is the full content of the post, with more details and information...</p>
+                    </div>
+                    <button class="toggle-post" onclick="togglePost(this)">Read More &#x25BC;</button>
+                    <button class="see-less" style="display: none;" onclick="togglePost(this)">See Less &#9650;</button>
+                </div>
+                <!-- Repeat for other posts in this column -->
+            </div>
+
+            <!-- Add more columns as needed -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Blog. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
