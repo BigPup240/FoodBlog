@@ -23,7 +23,7 @@ header {
 }
 
 .parallax-banner {
-    background-image: url('Banner1Original.jpg');
+    background-image: url('Banner.jpg');
     height: 300px;
     background-attachment: fixed;
     background-position: center;
