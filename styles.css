@@ -9,17 +9,15 @@ body {
     line-height: 1.6;
     background-color: #f5f5dc;  /* Beige */
     color: #333;
-    padding: 20px; /* Add padding around the whole page */
+    padding-left: 20px; /* Ensure content doesn't touch the left edge */
+    padding-right: 20px; /* Ensure content doesn't touch the right edge */
 }
 
 /* Header */
 header {
     background: #e3dac9; /* Cream */
     color: #333;
-    padding: 60px 0; /* Increased padding for a larger top banner */
-    border-radius: 10px; /* Add rounded corners */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin-bottom: 20px; /* Space after header */
+    padding: 60px 0; /* Keep larger top banner */
 }
 
 .title-link {
@@ -28,7 +26,7 @@ header {
 }
 
 .container {
-    width: 95%; /* Shrink width to prevent elements from touching the edges */
+    width: 100%; /* Ensure full-width but allow padding */
     margin: 0 auto;
 }
 
@@ -36,15 +34,12 @@ header {
 #hero {
     position: relative;
     text-align: center;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow */
-    margin-bottom: 20px; /* Space after the hero section */
 }
 
 .banner-image {
     width: 100%;
     height: auto;
-    border-radius: 10px; /* Match the container border radius */
+    border-radius: 10px;
 }
 
 .hero-text {
@@ -82,9 +77,7 @@ header {
 #recipes {
     padding: 50px 0;
     background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow */
-    margin-bottom: 20px; /* Space after the section */
+    margin-bottom: 40px;
 }
 
 #recipes h2 {
@@ -97,7 +90,6 @@ header {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding: 0 20px; /* Add padding inside the recipe grid */
 }
 
 .recipe-grid article {
@@ -124,11 +116,7 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
     gap: 20px;
-    padding: 50px 20px; /* Add padding inside the grid */
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow */
-    margin-bottom: 20px;
+    padding: 50px 0;
 }
 
 .gallery-grid article {
@@ -159,12 +147,9 @@ header {
 /* About Section */
 .about-section {
     background: #fff8dc; /* Light beige background */
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow */
+    padding: 50px 0;
     position: relative;
     overflow: hidden;
-    margin-bottom: 20px;
 }
 
 .about-section::before {
@@ -232,8 +217,6 @@ footer {
     color: #333;
     text-align: center;
     padding: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 footer a {
