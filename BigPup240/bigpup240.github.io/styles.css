@@ -11,6 +11,7 @@ body {
     color: #333;
 }
 
+/* Header */
 header {
     background: #e3dac9; /* Cream */
     color: #333;
@@ -48,6 +49,7 @@ nav ul li a {
     font-weight: 600;
 }
 
+/* Hero Section */
 #hero {
     position: relative;
     text-align: center;
@@ -90,7 +92,7 @@ nav ul li a {
     transform: scale(1.05);
 }
 
-/* Recipe Showcase Styles */
+/* Recipe Showcase Section (Index Page) */
 #recipes {
     padding: 50px 0;
     background: #fff;
@@ -121,7 +123,7 @@ nav ul li a {
     border-radius: 10px;
 }
 
-/* Gallery Page Styles */
+/* Gallery Page */
 #gallery h2 {
     text-align: center;
     margin: 40px 0;
@@ -159,7 +161,6 @@ nav ul li a {
     font-size: 1rem;
     color: #666;
 }
-
 
 /* About Section */
 .about-section {
@@ -227,7 +228,6 @@ nav ul li a {
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-
 
 /* Footer */
 footer {
