@@ -160,6 +160,75 @@ nav ul li a {
     color: #666;
 }
 
+
+/* About Section */
+.about-section {
+    background: #fff8dc; /* Light beige background */
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background-color: #d2b48c; /* Subtle tan shape */
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+.about-section::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    background-color: #e3dac9; /* Cream shape */
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2; /* Ensures content is above background shapes */
+}
+
+.about-text {
+    width: 60%;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.about-image {
+    width: 35%;
+}
+
+.image-box {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
 /* Footer */
 footer {
     background: #e3dac9;
