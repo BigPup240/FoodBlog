@@ -90,7 +90,7 @@ nav ul li a {
     transform: scale(1.05);
 }
 
-/* Index Page Specific Styles */
+/* Recipe Showcase Styles */
 #recipes {
     padding: 50px 0;
     background: #fff;
@@ -121,7 +121,7 @@ nav ul li a {
     border-radius: 10px;
 }
 
-/* Gallery Page Specific Styles */
+/* Gallery Page Styles */
 #gallery h2 {
     text-align: center;
     margin: 40px 0;
