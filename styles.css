@@ -16,8 +16,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;  /* Ensure the body covers the full height of the viewport */
-    padding-left: 20px;  /* Prevent content from touching the left edge */
-    padding-right: 20px; /* Prevent content from touching the right edge */
+    padding-left: 10px;  /* Prevent content from touching the left edge */
+    padding-right: 10px; /* Prevent content from touching the right edge */
 }
 
 /* Container */
@@ -25,22 +25,37 @@ body {
     width: 100%;
     max-width: 1200px;  /* Max width for better readability */
     margin: 0 auto;
-    padding: 0 20px;  /* Ensure elements inside the container have room from the edges */
 }
 
 /* Header */
 header {
     background: #e3dac9; /* Cream */
     color: #333;
-    padding: 40px 0;  /* Reduce padding for a sleeker look */
+    padding: 20px 0;
     border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Simple shadow effect */
+    width: 100%;  /* Ensure the header spans the full width */
+    text-align: center;  /* Center the header content */
 }
 
-.title-link {
+header h1 {
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;  /* Center the navigation items */
+    padding: 10px 0;
+}
+
+header nav ul li {
+    margin: 0 15px;  /* Space between nav items */
+}
+
+header nav ul li a {
     text-decoration: none;
-    color: inherit;
+    font-weight: 600;
+    color: #333;
 }
 
 /* Hero Section */
@@ -84,7 +99,7 @@ header {
     border-radius: 5px;
 }
 
-/* Recipe Showcase (Index Page) */
+/* Recipe Showcase Section */
 #recipes {
     padding: 50px 0;
     background: #fff;
@@ -217,10 +232,7 @@ footer {
     color: #333;
     text-align: center;
     padding: 20px 0;
-    width: calc(100% + 40px); /* Extend footer to account for body padding */
-    margin-left: -20px;  /* Offset the padding so footer spans the full page width */
-    margin-right: -20px;
-    border-radius: 10px;
+    width: 100%;
     margin-top: auto;  /* Stick footer to the bottom */
 }
 
