@@ -15,10 +15,9 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-left: 20px;  /* Padding to prevent cut-off on the left */
-    padding-right: 20px; /* Padding to prevent cut-off on the right */
-    min-height: 100vh;  /* Ensure the body fills the height of the viewport */
+    min-height: 100vh;  /* Ensure the body covers the full height of the viewport */
+    padding-left: 20px;  /* Prevent content from touching the left edge */
+    padding-right: 20px; /* Prevent content from touching the right edge */
 }
 
 /* Container */
@@ -26,17 +25,17 @@ body {
     width: 100%;
     max-width: 1200px;  /* Max width for better readability */
     margin: 0 auto;
-    padding: 0 20px;  /* Padding inside container to prevent cut-off on smaller screens */
+    padding: 0 20px;  /* Ensure elements inside the container have room from the edges */
 }
 
 /* Header */
 header {
     background: #e3dac9; /* Cream */
     color: #333;
-    padding: 40px 0;
+    padding: 40px 0;  /* Reduce padding for a sleeker look */
     border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Simple shadow effect */
 }
 
 .title-link {
@@ -50,7 +49,6 @@ header {
     text-align: center;
     margin-bottom: 40px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .banner-image {
@@ -65,7 +63,7 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Make text stand out over the image */
 }
 
 #hero h2 {
@@ -84,20 +82,13 @@ header {
     text-decoration: none;
     font-weight: 600;
     border-radius: 5px;
-    transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.btn:hover {
-    background: #c2a689;
-    transform: scale(1.05);
-}
-
-/* Recipe Showcase Section */
+/* Recipe Showcase (Index Page) */
 #recipes {
     padding: 50px 0;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
 }
 
@@ -117,13 +108,7 @@ header {
     background: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.recipe-grid article:hover {
-    transform: translateY(-5px);
 }
 
 .recipe-grid img {
@@ -145,7 +130,6 @@ header {
     padding: 50px 0;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
 }
 
@@ -153,13 +137,7 @@ header {
     background: #f9f9f9;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.gallery-grid article:hover {
-    transform: translateY(-5px);
 }
 
 .gallery-grid img {
@@ -169,22 +147,11 @@ header {
     border-radius: 10px;
 }
 
-.gallery-grid h3 {
-    margin: 10px 0;
-    font-size: 1.5rem;
-}
-
-.gallery-grid p {
-    font-size: 1rem;
-    color: #666;
-}
-
 /* About Section */
 .about-section {
     background: #fff8dc;
     padding: 50px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     position: relative;
     margin-bottom: 40px;
 }
@@ -199,7 +166,6 @@ header {
     background-color: #d2b48c;
     border-radius: 50%;
     opacity: 0.3;
-    z-index: 1;
 }
 
 .about-section::after {
@@ -212,7 +178,6 @@ header {
     background-color: #e3dac9;
     border-radius: 50%;
     opacity: 0.3;
-    z-index: 1;
 }
 
 .about-content {
@@ -220,7 +185,6 @@ header {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    z-index: 2;
 }
 
 .about-text {
@@ -245,7 +209,6 @@ header {
     width: 100%;
     height: auto;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
@@ -254,12 +217,11 @@ footer {
     color: #333;
     text-align: center;
     padding: 20px 0;
-    width: calc(100% + 40px); /* Extend footer width beyond padding */
-    margin-left: -20px; /* Offset padding on the left */
-    margin-right: -20px; /* Offset padding on the right */
+    width: calc(100% + 40px); /* Extend footer to account for body padding */
+    margin-left: -20px;  /* Offset the padding so footer spans the full page width */
+    margin-right: -20px;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    margin-top: auto; /* Pushes footer to the bottom of the page */
+    margin-top: auto;  /* Stick footer to the bottom */
 }
 
 footer a {
