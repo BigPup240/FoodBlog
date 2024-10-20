@@ -9,50 +9,42 @@ body {
     line-height: 1.6;
     background-color: #f5f5dc;  /* Beige */
     color: #333;
+    padding-left: 20px; /* Ensure content doesn't touch the left edge */
+    padding-right: 20px; /* Ensure content doesn't touch the right edge */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures body covers full height of the viewport */
 }
 
 /* Header */
 header {
     background: #e3dac9; /* Cream */
     color: #333;
-    padding: 60px 0; /* Increased padding for a larger top banner */
+    padding: 40px 0; /* Reduced padding for a neater top banner */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Space after header */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
 .title-link {
     text-decoration: none;
-    color: inherit;  /* Make the clickable title look like normal text */
+    color: inherit;
 }
 
 .container {
-    width: 90%;
+    width: 100%; /* Full width, but leaves room for the page padding */
+    max-width: 1200px; /* Set a maximum width for better readability */
     margin: 0 auto;
-}
-
-header h1 {
-    float: left;
-    font-size: 2.5em;
-}
-
-nav ul {
-    float: right;
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-left: 30px;
-}
-
-nav ul li a {
-    color: #333;
-    text-decoration: none;
-    font-weight: 600;
+    padding: 0 20px; /* Padding inside container to prevent elements from touching edges */
 }
 
 /* Hero Section */
 #hero {
     position: relative;
     text-align: center;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .banner-image {
@@ -67,18 +59,21 @@ nav ul li a {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Make text pop over banner */
 }
 
 #hero h2 {
     font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 #hero p {
-    margin-bottom: 20px;  /* Space between description and Explore button */
+    font-size: 1.25rem;
+    margin-bottom: 20px; /* Space between description and Explore button */
 }
 
 .btn {
-    background: #d2b48c; /* Tan */
+    background: #d2b48c;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -92,10 +87,13 @@ nav ul li a {
     transform: scale(1.05);
 }
 
-/* Recipe Showcase Section (Index Page) */
+/* Recipe Showcase (Index Page) */
 #recipes {
     padding: 50px 0;
     background: #fff;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 #recipes h2 {
@@ -116,6 +114,11 @@ nav ul li a {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.recipe-grid article:hover {
+    transform: translateY(-5px); /* Slight hover effect for articles */
 }
 
 .recipe-grid img {
@@ -135,6 +138,10 @@ nav ul li a {
     grid-template-columns: repeat(2, 1fr); /* Two columns */
     gap: 20px;
     padding: 50px 0;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
 .gallery-grid article {
@@ -143,12 +150,17 @@ nav ul li a {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid article:hover {
+    transform: translateY(-5px); /* Hover effect for gallery images */
 }
 
 .gallery-grid img {
     width: 100%;
-    height: 200px;  /* Set a fixed height for images */
-    object-fit: cover;  /* Ensure images fit without distortion */
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -164,10 +176,12 @@ nav ul li a {
 
 /* About Section */
 .about-section {
-    background: #fff8dc; /* Light beige background */
-    padding: 50px 0;
+    background: #fff8dc;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     position: relative;
-    overflow: hidden;
+    margin-bottom: 40px;
 }
 
 .about-section::before {
@@ -177,10 +191,10 @@ nav ul li a {
     right: -50px;
     width: 200px;
     height: 200px;
-    background-color: #d2b48c; /* Subtle tan shape */
+    background-color: #d2b48c;
     border-radius: 50%;
-    z-index: 1;
     opacity: 0.3;
+    z-index: 1;
 }
 
 .about-section::after {
@@ -190,10 +204,10 @@ nav ul li a {
     left: -50px;
     width: 150px;
     height: 150px;
-    background-color: #e3dac9; /* Cream shape */
+    background-color: #e3dac9;
     border-radius: 50%;
-    z-index: 1;
     opacity: 0.3;
+    z-index: 1;
 }
 
 .about-content {
@@ -201,7 +215,7 @@ nav ul li a {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    z-index: 2; /* Ensures content is above background shapes */
+    z-index: 2;
 }
 
 .about-text {
@@ -235,6 +249,9 @@ footer {
     color: #333;
     text-align: center;
     padding: 20px 0;
+    margin-top: auto; /* Pushes the footer to the bottom of the page */
+    width: 100%; /* Ensure the footer spans the full width */
+    border-radius: 10px;
 }
 
 footer a {
