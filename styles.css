@@ -4,38 +4,44 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    height: 100%;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     background-color: #f5f5dc;  /* Beige */
     color: #333;
-    padding-left: 20px; /* Ensure content doesn't touch the left edge */
-    padding-right: 20px; /* Ensure content doesn't touch the right edge */
+}
+
+body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures body covers full height of the viewport */
+    justify-content: space-between;
+    padding-left: 20px;  /* Padding to prevent cut-off on the left */
+    padding-right: 20px; /* Padding to prevent cut-off on the right */
+    min-height: 100vh;  /* Ensure the body fills the height of the viewport */
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;  /* Max width for better readability */
+    margin: 0 auto;
+    padding: 0 20px;  /* Padding inside container to prevent cut-off on smaller screens */
 }
 
 /* Header */
 header {
     background: #e3dac9; /* Cream */
     color: #333;
-    padding: 40px 0; /* Reduced padding for a neater top banner */
+    padding: 40px 0;
     border-radius: 10px;
-    margin-bottom: 20px; /* Space after header */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .title-link {
     text-decoration: none;
     color: inherit;
-}
-
-.container {
-    width: 100%; /* Full width, but leaves room for the page padding */
-    max-width: 1200px; /* Set a maximum width for better readability */
-    margin: 0 auto;
-    padding: 0 20px; /* Padding inside container to prevent elements from touching edges */
 }
 
 /* Hero Section */
@@ -59,17 +65,16 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Make text pop over banner */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 #hero h2 {
     font-size: 3rem;
-    margin-bottom: 10px;
 }
 
 #hero p {
     font-size: 1.25rem;
-    margin-bottom: 20px; /* Space between description and Explore button */
+    margin-bottom: 20px;
 }
 
 .btn {
@@ -87,13 +92,13 @@ header {
     transform: scale(1.05);
 }
 
-/* Recipe Showcase (Index Page) */
+/* Recipe Showcase Section */
 #recipes {
     padding: 50px 0;
     background: #fff;
-    margin-bottom: 40px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
 #recipes h2 {
@@ -118,7 +123,7 @@ header {
 }
 
 .recipe-grid article:hover {
-    transform: translateY(-5px); /* Slight hover effect for articles */
+    transform: translateY(-5px);
 }
 
 .recipe-grid img {
@@ -154,7 +159,7 @@ header {
 }
 
 .gallery-grid article:hover {
-    transform: translateY(-5px); /* Hover effect for gallery images */
+    transform: translateY(-5px);
 }
 
 .gallery-grid img {
@@ -249,9 +254,12 @@ footer {
     color: #333;
     text-align: center;
     padding: 20px 0;
-    margin-top: auto; /* Pushes the footer to the bottom of the page */
-    width: 100%; /* Ensure the footer spans the full width */
+    width: calc(100% + 40px); /* Extend footer width beyond padding */
+    margin-left: -20px; /* Offset padding on the left */
+    margin-right: -20px; /* Offset padding on the right */
     border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: auto; /* Pushes footer to the bottom of the page */
 }
 
 footer a {
